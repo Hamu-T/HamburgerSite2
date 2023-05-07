@@ -1,3 +1,18 @@
 font-family: 'M PLUS 1', sans-serif;
 font-family: 'Noto Sans JP', sans-serif;
 font-family: 'Roboto', sans-serif;
+
+- TakeOut, EatIn の文字が増えたときに幅はそのままで
+    高さを変動する。
+    今文字が増えると片方がとても狭くなる。
+
+- 地図の部分はテキストが増えた分がフッターの裏側に伸びていくので
+    文字が読めないので、地図は高さを伸びるように実装
+
+- タブレット以下でメニューを開いたときに、スクロールするのはサイドバーのみで
+    コンテンツの部分はスクロールしないように
+
+- FLOCSS の Layout はページのレイアウトにあたる大枠のみをいれるので、
+    header, main, sidebar, footer, のみ。
+     それ以外は大きいパーツはプロジェクト。
+    細かいパーツや挙動は コンポーネントに移動
