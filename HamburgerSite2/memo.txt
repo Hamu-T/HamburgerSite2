@@ -1,3 +1,0 @@
-font-family: 'M PLUS 1', sans-serif;
-font-family: 'Noto Sans JP', sans-serif;
-font-family: 'Roboto', sans-serif;
