@@ -1,0 +1,49 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.p-outin {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    &--takeout {
+        margin-right: 3vw;
+        padding: 1.7vw;
+        background-image: url(../../../img/home_take-out_.jpg);
+        @include m.mq(md) {
+            margin-right: 1.5vw;
+        }
+        @include m.mq(sp) {
+            margin-right: 0;
+            padding: 3vw;
+        }
+    }
+    &--eatin {
+        margin-left: 3vw;
+        padding: 1.7vw;
+        background-image: url(../../../img/home-eat_in.jpg);
+        @include m.mq(md) {
+            margin-left: 1.5vw;
+        }
+        @include m.mq(sp) {
+            margin-left: 0;
+            padding: 3vw;
+        }
+    }
+    &__block {
+        display: grid;
+        gap: 1.7vw;
+        @include m.mq(sp) {
+            gap: 3vw;
+        }
+    }
+    &__inner {
+        align-items: end;
+        box-sizing: border-box;
+        padding: 1.5vw;
+        background-color: v.$c-white;
+        opacity: 80%;
+        @include m.mq(sp) {
+            padding: 2vw;
+        }
+    }
+}

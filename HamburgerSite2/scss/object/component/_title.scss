@@ -1,0 +1,100 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+// title
+
+.c-title {
+    font-family: 'Roboto', sans-serif;
+    color: v.$c-text;
+    font-weight: bold;
+
+    &--header {
+        font-size: 4.5vw;
+        margin-left: 65px;
+        @include m.mq(md) {
+            font-size: 6vw;
+            margin-left: 0;
+        }
+        @include m.mq(sp) {
+            font-size: 10vw;
+        }
+    }
+    &--visual {
+        display: flex;
+        text-align: center;
+        font-family: 'M PLUS 1', sans-serif;
+        font-size: 48px;
+        margin-left: 4vw;
+        color: v.$c-white;
+        @include m.mq(md) {
+            font-size: 7vw;
+            margin-left: 10vw;
+        }
+        @include m.mq(sp) {
+            margin-left: 10vw;
+        }
+    }
+    &--outin {
+        &_title {
+            font-size: 4vw;
+            padding-top: 1.8vw;
+            color: v.$c-outin;
+            @include m.mq(md) {
+                font-size: 4.5vw;
+                padding-top: 0;
+            }
+            @include m.mq(sp) {
+                font-size: 11vw;
+            }
+        }
+            &_subtitle{
+                font-family: 'M PLUS 1', sans-serif;
+                color: v.$c-subtitle;
+                font-size: 1.5vw;
+                padding-bottom: 1.5vw;
+                @include m.mq(md) {
+                    font-size: 2.5vw;
+                }
+                @include m.mq(sp) {
+                    font-size: 4vw;
+                }
+            }
+        }
+    &--map {
+        font-family: 'M PLUS 1', sans-serif;
+        color: v.$c-white;
+        font-size: 2vw;
+        padding-top: 3.5vw;
+        @include m.mq(md) {
+            font-size: 30px;
+            padding-top: 4vw;
+        }
+        @include m.mq(sp) {
+            font-size: 7vw;
+        }
+    }
+    &--sidebar-title {
+        font-size: 1.8vw;
+        padding-top: 4.5vw;
+        padding-bottom: 2.3vw;
+        @include m.mq(md) {
+            visibility: hidden;
+        }
+    }
+    &--menu {
+        font-family: 'M PLUS 1', sans-serif;
+        width: 40%;
+        font-size: 1.3vw;
+        margin-top: 2.7vw;
+        @include m.mq(md) {
+            font-size: 3.7vw;
+            margin-top: 9vw;
+            margin-bottom: 4vw;
+        }
+        @include m.mq(sp) {
+            font-size: 5.5vw;
+            margin-top: 14vw;
+            margin-bottom: 7vw;
+        }
+    }
+}

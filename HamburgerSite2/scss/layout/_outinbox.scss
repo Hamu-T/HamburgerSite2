@@ -1,0 +1,35 @@
+@use '../foundation/variable' as v;
+@use '../foundation/mixin' as m;
+
+.l-outin {
+    display: flex;
+    justify-content: center;
+    // height: 1197px;
+    // padding: 120px 100px;
+    padding: 5vw 5vw;
+    @include m.mq(md) {
+        // height: 681px;
+        padding: 3.5vw 3.5vw;
+    }
+    @include m.mq(sp) {
+        // height: 643px;
+        display:grid;
+        gap: 3vw;
+        flex-direction: column;
+    }
+    &__box {
+        position: relative;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-end;
+        // margin: 0 80px;
+        // @include m.mq(wd) {
+        //     margin: 0 30px;
+        //     // height: 681px;
+        // }
+        // @include m.mq(md) {
+        //     margin:20px;
+        //     margin-bottom: 40px;
+        // }
+    }
+}

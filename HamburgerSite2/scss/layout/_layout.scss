@@ -1,0 +1,47 @@
+@use '../foundation/variable' as v;
+@use '../foundation/mixin' as m;
+
+.wrapper {
+    position: relative;
+    // @media screen and (min-width: 1201px) {
+        display: grid;
+        // grid-template-columns: 1fr 367px;
+        // grid-template-rows: auto auto auto;
+        .l-header {
+            // position: relative;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        .l-main {
+            // position: relative;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        .l-footer {
+            // position: relative;
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+        }
+        // @include m.mq(pc) {
+            .l-sidebar {
+                // position: absolute;
+                grid-column: 2 / 3;
+                grid-row: 1 / 3;
+            // }
+        }
+        // @include m.mq(md) {
+        //     .l-header {
+        //         grid-column: 1;
+        //         grid-row: 1;
+        //     }
+        //     .l-main {
+        //         grid-column: 2;
+        //         grid-row: 2;
+        //     }
+        //     .l-footer {
+        //         grid-column: 3;
+        //         grid-row: 3;
+        //     }
+        // }
+    // }
+}

@@ -1,0 +1,12 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.p-menu {
+    padding-left: 2.4vw;
+    @include m.mq(md) {
+        padding-left: 6.4vw;
+    }
+    @include m.mq(sp) {
+        padding-left: 11vw;
+    }
+}
