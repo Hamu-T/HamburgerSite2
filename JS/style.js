@@ -4,6 +4,7 @@ const drawer_1 = document.querySelector('.l-sidebar');
 const drawer_2 = document.querySelector('.l-sidebar');
 const shadow_1 = document.querySelector('.l-shadow');
 const shadow_2 = document.querySelector('.l-shadow');
+const no_scroll = document.querySelector('.c-no_scroll');
 
 /* toggleSidebarButton クリック時にサイドバーの幅を取得 */
 const deviceWidth = window.innerWidth;/* window幅を取得 */
@@ -17,11 +18,13 @@ document.documentElement.style.setProperty('--phone-width', `${phoneWidth}px`);
 toggleSidebarButton_1.addEventListener('click', function() {
     drawer_1.classList.toggle('active');
     shadow_1.classList.toggle('active');
+    no_scroll.classList.toggle('active');
 });
 /* 上下同じアクションだが別にしたら安定したので採用 */
 toggleSidebarButton_2.addEventListener('click', function() {
     drawer_2.classList.toggle('active');
     shadow_2.classList.toggle('active');
+    no_scroll.classList.toggle('active');
 });
 
 /* toggleSidebarButton クリック時にサイドバーを非表示にする */
