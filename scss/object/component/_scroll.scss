@@ -1,0 +1,9 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin'as m;
+
+.c-no_scroll {
+    // position: static;
+    &.active {
+        position: fixed;
+    }
+}
