@@ -2,8 +2,11 @@
 @use '../../foundation/mixin'as m;
 
 .c-no_scroll {
-    // position: static;
+    position:sticky;
     &.active {
         position: fixed;
+        overflow: scroll;
+        top: 0;
+        left: 0;
     }
 }

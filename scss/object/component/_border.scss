@@ -6,14 +6,15 @@
     &--outin {
         width: 3.6vw;
         border-bottom: 4px solid;
-        margin: 2.5vw 0 30vw 0;
+        // margin: 2.5vw 0 30vw 0;
+        margin: 2.5vw 0 0 0;
         @include m.mq(md) {
             width: 3.5vw;
-            margin-top: 2.3vw;
+            // margin-top: 2.3vw;
         }
         @include m.mq(sp) {
             width: 9vw;
-            margin-bottom: 60vw;
+            // margin-bottom: 60vw;
         }
     }
     &--map{

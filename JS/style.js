@@ -1,3 +1,5 @@
+/* sidebarの開閉と上下のスクロールができるコード */
+
 const toggleSidebarButton_1 = document.querySelector('.drawer-open');
 const toggleSidebarButton_2 = document.querySelector('.drawer-close');
 const drawer_1 = document.querySelector('.l-sidebar');
@@ -12,6 +14,7 @@ const tabletWidth = deviceWidth * 0.5;/* window幅の50%を取得 */
 const phoneWidth = deviceWidth * 0.8;/* window幅80%を取得 */
 
 /* cssで使える変数に代入 */
+document.documentElement.style.setProperty('--device-Width', `${deviceWidth}px`);
 document.documentElement.style.setProperty('--tablet-width', `${tabletWidth}px`);
 document.documentElement.style.setProperty('--phone-width', `${phoneWidth}px`);
 
@@ -34,6 +37,7 @@ document.querySelectorAll('.toggleSidebarButton').forEach(function(button) {
     drawer_2.classList.remove('active');
     shadow_1.classList.remove('active');
     shadow_2.classList.remove('active');
+    no_scroll.classList.remove('active');
   });
 });
 
@@ -49,4 +53,5 @@ window.addEventListener('resize', function() {
   drawer_2.classList.remove('active');
   shadow_1.classList.remove('active');
   shadow_2.classList.remove('active');
+  no_scroll.classList.remove('active');
 });

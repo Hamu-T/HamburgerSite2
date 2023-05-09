@@ -18,18 +18,18 @@
         flex-direction: column;
     }
     &__box {
-        position: relative;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-end;
-        // margin: 0 80px;
-        // @include m.mq(wd) {
-        //     margin: 0 30px;
-        //     // height: 681px;
-        // }
-        // @include m.mq(md) {
-        //     margin:20px;
-        //     margin-bottom: 40px;
-        // }
+        // position: relative;
+        width: 100%;
+        display: flex;
+    }
+    &__inner {
+        display: grid;
+        grid-template-rows: 300px 1fr;
+    }
+    &__title {
+        grid-row: 1/2;
+    }
+    &__content {
+        grid-row: 3/4;
     }
 }

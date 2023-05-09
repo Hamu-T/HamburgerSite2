@@ -17,6 +17,7 @@
     width: var(--phone-width);
   }
   &.active {
+    height: 950px;
     z-index: 2;
     @include m.mq(md) {
       left: calc(var(--tablet-width) * -1);
