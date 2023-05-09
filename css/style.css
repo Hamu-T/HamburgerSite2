@@ -144,7 +144,18 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 .l-outin__box {
-  position: relative;
+  width: 100%;
+  display: flex;
+}
+.l-outin__inner {
+  display: grid;
+  grid-template-rows: 300px 1fr;
+}
+.l-outin__title {
+  grid-row: 1/2;
+}
+.l-outin__content {
+  grid-row: 3/4;
 }
 
 .l-search {
@@ -183,6 +194,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 .l-sidebar.active {
+  height: 950px;
   z-index: 2;
 }
 @media screen and (max-width: 1200px) {
@@ -554,18 +566,16 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 .c-border--outin {
   width: 3.6vw;
   border-bottom: 4px solid;
-  margin: 2.5vw 0 30vw 0;
+  margin: 2.5vw 0 0 0;
 }
 @media screen and (max-width: 1200px) {
   .c-border--outin {
     width: 3.5vw;
-    margin-top: 2.3vw;
   }
 }
 @media screen and (max-width: 768px) {
   .c-border--outin {
     width: 9vw;
-    margin-bottom: 60vw;
   }
 }
 .c-border--map {
@@ -585,8 +595,15 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 
+.c-no_scroll {
+  position: -webkit-sticky;
+  position: sticky;
+}
 .c-no_scroll.active {
   position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
 }
 
 .p-visual {

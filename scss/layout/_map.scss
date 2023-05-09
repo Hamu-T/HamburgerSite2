@@ -9,7 +9,7 @@
     &__google-map {
         width: 100%;
         opacity: 70%;
-        height: 35vw;
+        // height: 35vw;
         @include m.mq(sp) {
             height: 180vw;
         }
