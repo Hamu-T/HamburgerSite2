@@ -1,7 +1,9 @@
-@use '../foundation/variable' as v;
-@use '../foundation/mixin' as m;
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
 
-.l-search {
+/* input タグの設定 */
+
+.p-search {
     display: flex;
     align-items: center;
     justify-content: center;

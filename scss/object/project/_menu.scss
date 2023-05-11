@@ -1,6 +1,8 @@
 @use '../../foundation/variable' as v;
 @use '../../foundation/mixin' as m;
 
+/* sidebar menu */
+
 .p-menu {
     padding-left: 2.4vw;
     @include m.mq(md) {

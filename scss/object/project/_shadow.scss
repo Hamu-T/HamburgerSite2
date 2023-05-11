@@ -1,7 +1,9 @@
-@use '../foundation/variable' as v;
-@use '../foundation/mixin' as m;
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
 
-.l-shadow {
+/* sidebar表示時のブラインド */
+
+.p-shadow {
     // sidbarのボタンを押したら発動
     width: 100%;
     top: 0;

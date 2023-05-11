@@ -1,7 +1,7 @@
 @use '../../foundation/variable' as v;
 @use '../../foundation/mixin' as m;
 
-// text
+/* text */
 
 .c-text {
     font-family: 'M PLUS 1', sans-serif;
@@ -11,26 +11,25 @@
         &_content {
             font-weight: 400;
             font-size: 1.2vw;
-            line-height: 1.5vw;
+            line-height: 2vw;
             @include m.mq(md) {
                 font-size: 1.6vw;
                 line-height: 2.5vw;
             }
             @include m.mq(sp) {
-                font-size: 2.5vw;
-                line-height: 4vw;
+                font-size: 3vw;
+                line-height: 5vw;
             }
         }
     }
     &--map {
+        position: relative;
         font-size: 0.9vw;
-        line-height: 2.5vw;
+        line-height: 2vw;
         color: v.$c-white;
-        height: 100%;
-        margin: 0 4vw 7vw 0;
         @include m.mq(md) {
-            font-size: 1.2vw;
-            line-height: 3vw;
+            font-size: 1.5vw;
+            line-height: 3.5vw;
         }
         @include m.mq(sp) {
             font-size: 2.7vw;

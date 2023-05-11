@@ -1,24 +1,21 @@
-@use '../foundation/variable' as v;
-@use '../foundation/mixin' as m;
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
 
-.l-outin {
+/* outin-Box 外枠 */
+
+.p-outin {
     display: flex;
     justify-content: center;
-    // height: 1197px;
-    // padding: 120px 100px;
     padding: 5vw 5vw;
     @include m.mq(md) {
-        // height: 681px;
         padding: 3.5vw 3.5vw;
     }
     @include m.mq(sp) {
-        // height: 643px;
         display:grid;
         gap: 3vw;
         flex-direction: column;
     }
     &__box {
-        // position: relative;
         width: 100%;
         display: flex;
     }

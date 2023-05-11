@@ -1,13 +1,13 @@
 @use '../../foundation/variable' as v;
 @use '../../foundation/mixin' as m;
 
-.p-outin {
+/* outin-box 中身 */
+
+.c-outin {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     &--takeout {
-        // position: absolute;
-        // top: 0;
         margin-right: 3vw;
         padding: 1.7vw;
         background-image: url(../../../img/home_take-out_.jpg);
@@ -20,8 +20,6 @@
         }
     }
     &--eatin {
-        // position: absolute;
-        // top: 0;
         margin-left: 3vw;
         padding: 1.7vw;
         background-image: url(../../../img/home-eat_in.jpg);
