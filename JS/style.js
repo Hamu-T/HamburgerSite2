@@ -4,8 +4,8 @@ const toggleSidebarButton_1 = document.querySelector('.drawer-open');
 const toggleSidebarButton_2 = document.querySelector('.drawer-close');
 const drawer_1 = document.querySelector('.l-sidebar');
 const drawer_2 = document.querySelector('.l-sidebar');
-const shadow_1 = document.querySelector('.l-shadow');
-const shadow_2 = document.querySelector('.l-shadow');
+const shadow_1 = document.querySelector('.p-shadow');
+const shadow_2 = document.querySelector('.p-shadow');
 const no_scroll = document.querySelector('.c-no_scroll');
 
 /* toggleSidebarButton クリック時にサイドバーの幅を取得 */
@@ -14,7 +14,6 @@ const tabletWidth = deviceWidth * 0.5;/* window幅の50%を取得 */
 const phoneWidth = deviceWidth * 0.8;/* window幅80%を取得 */
 
 /* cssで使える変数に代入 */
-document.documentElement.style.setProperty('--device-Width', `${deviceWidth}px`);
 document.documentElement.style.setProperty('--tablet-width', `${tabletWidth}px`);
 document.documentElement.style.setProperty('--phone-width', `${phoneWidth}px`);
 

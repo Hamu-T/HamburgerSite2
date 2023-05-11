@@ -1,32 +1,27 @@
 @use '../../foundation/variable' as v;
 @use '../../foundation/mixin' as m;
 
+/* 横線 */
+
 .c-border {
     color: v.$c-white;
     &--outin {
         width: 3.6vw;
         border-bottom: 4px solid;
-        // margin: 2.5vw 0 30vw 0;
         margin: 2.5vw 0 0 0;
         @include m.mq(md) {
             width: 3.5vw;
-            // margin-top: 2.3vw;
         }
         @include m.mq(sp) {
             width: 9vw;
-            // margin-bottom: 60vw;
         }
     }
     &--map{
         border-bottom: 2px solid v.$c-white;
         width: 4.3vw;
         margin: 2vw 0 2.5vw 0;
-        // @include m.mq(pc) {
-        //     margin: 40px 0;
-        // }
         @include m.mq(md) {
             width: 6.5vw;
-            // margin: 15px 0;
         }
         @include m.mq(sp) {
             width: 17vw;

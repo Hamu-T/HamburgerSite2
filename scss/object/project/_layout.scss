@@ -1,0 +1,25 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+/* 基本 layout 設定 */
+
+.wrapper {
+    position: relative;
+        display: grid;
+        .l-header {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        .l-main {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        .l-footer {
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+        }
+            .l-sidebar {
+                grid-column: 2 / 3;
+                grid-row: 1 / 3;
+        }
+}
