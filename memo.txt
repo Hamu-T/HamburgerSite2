@@ -19,3 +19,4 @@ font-family: 'Roboto', sans-serif;
     header, main, sidebar, footer, のみ。
      それ以外は大きいパーツはプロジェクト。
     細かいパーツや挙動は コンポーネントに移動
+----------------[解決]-------------------
