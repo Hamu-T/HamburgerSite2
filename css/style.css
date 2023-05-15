@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 .c-button {
   width: 136px;
   height: 46px;
-  background-color: #F2EDE9;
+  background: linear-gradient(#F2EDE9, #DED8D3);
   border: 1px solid #707070;
   border-radius: 10px;
 }
@@ -589,6 +589,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 .p-map {
   position: relative;
   height: auto;
+  background-color: rgb(0, 0, 0);
 }
 .p-map__wrapper {
   position: absolute;

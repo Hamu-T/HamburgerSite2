@@ -7,7 +7,7 @@
 .c-button {
     width: 136px;
     height: 46px;
-    background-color: v.$c-button;
+    background: linear-gradient(v.$c-gradation-1,v.$c-gradation-2);
     border: 1px solid v.$c-text;
     border-radius: 10px;
     &--header {
