@@ -4,8 +4,8 @@ const toggleSidebarButton_1 = document.querySelector('.drawer-open');
 const toggleSidebarButton_2 = document.querySelector('.drawer-close');
 const drawer_1 = document.querySelector('.l-sidebar');
 const drawer_2 = document.querySelector('.l-sidebar');
-const shadow_1 = document.querySelector('.p-shadow');
-const shadow_2 = document.querySelector('.p-shadow');
+const shadow_1 = document.querySelector('.c-shadow');
+const shadow_2 = document.querySelector('.c-shadow');
 const no_scroll = document.querySelector('.c-no_scroll');
 
 /* toggleSidebarButton クリック時にサイドバーの幅を取得 */
