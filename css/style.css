@@ -33,13 +33,13 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 1200px) {
   .l-footer {
-    height: 12vw;
+    height: 14vw;
   }
 }
 @media screen and (max-width: 768px) {
   .l-footer {
     justify-content: space-around;
-    height: 20vw;
+    height: 25vw;
   }
 }
 
@@ -606,9 +606,9 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 .p-map__section {
   position: relative;
-  width: 60vw;
+  width: 50vw;
   padding: 4vw;
-  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 @media screen and (max-width: 1200px) {
   .p-map__section {
@@ -618,6 +618,24 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 @media screen and (max-width: 768px) {
   .p-map__section {
     padding: 10vw;
+  }
+}
+.p-map__bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 50vw;
+}
+@media screen and (max-width: 1200px) {
+  .p-map__bg-layer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-map__bg-layer {
+    height: 60%;
   }
 }
 
@@ -655,8 +673,19 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 .p-outin__box {
-  width: 100%;
   display: flex;
+  width: 100%;
+  min-height: 63vw;
+}
+@media screen and (max-width: 1200px) {
+  .p-outin__box {
+    min-height: 83vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-outin__box {
+    min-height: 143vw;
+  }
 }
 .p-outin__inner {
   display: grid;
