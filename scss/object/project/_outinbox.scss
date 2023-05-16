@@ -16,8 +16,15 @@
         flex-direction: column;
     }
     &__box {
-        width: 100%;
         display: flex;
+        width: 100%;
+        min-height: 63vw;// 高さを幅の伸縮に合わせる為「vw」を使った
+        @include m.mq(md) {
+            min-height: 83vw;
+        }
+        @include m.mq(sp) {
+            min-height: 143vw;
+        }
     }
     &__inner {
         display: grid;

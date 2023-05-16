@@ -22,14 +22,28 @@
     }
     &__section {
         position: relative;
-        width: 60vw;
+        width: 50vw;
         padding: 4vw;
-        background-color: rgba(0, 0, 0, 40%);
+        z-index: 1;
         @include m.mq(md) {
             width: 100%;
         }
         @include m.mq(sp) {
             padding: 10vw;
+        }
+    }
+    &__bg-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 30%);
+        width: 50vw;
+        @include m.mq(md) {
+            width: 100%;
+        }
+        @include m.mq(sp) {
+            height: 60%;
         }
     }
 }
