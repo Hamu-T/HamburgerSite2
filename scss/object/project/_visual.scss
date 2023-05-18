@@ -13,6 +13,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     @include m.mq(md) {
-        height: 50vw;
+        height: 40vw;
+    }
+    @include m.mq(sp) {
+        height: 80vw;
     }
 }

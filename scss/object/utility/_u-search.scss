@@ -2,8 +2,8 @@
 @use '../../foundation/mixin' as m;
 
 .u-search {
+    height: 10vw;
     @include m.mq(sp) {
         width: 80vw;
-        height: 7vw;
     }
 }

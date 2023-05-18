@@ -23,7 +23,7 @@
     &__section {
         position: relative;
         width: 50vw;
-        padding: 4vw;
+        padding: 6vw;
         z-index: 1;
         @include m.mq(md) {
             width: 100%;

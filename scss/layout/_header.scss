@@ -12,10 +12,10 @@
             flex-direction: column;
             justify-content: space-around;
             margin-top: auto;
-            height: 20vw;
+            height: 23vw;
         }
         @include m.mq(sp) {
-            height: 30vw;
+            height: 48vw;
         }
     }
 }

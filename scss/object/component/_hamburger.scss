@@ -1,0 +1,62 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+@use 'sass:math';
+
+
+.c-hamburger {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: v.$c-text;
+    &--header {
+        display: none;
+        @include m.mq(md) {
+            position: absolute;
+            display: block;
+            top: 20px;
+            right: 25px;
+            font-size: 4vw;
+        }
+        @include m.mq(sp) {
+            top: 8px;
+            right: 8px;
+            font-size: 5vw;
+        }
+    }
+    &--sidebar {
+        display: none;
+        width: 9vw;
+        height: 9vw;
+        position: absolute;// 擬似要素をボタンの中に納める
+        top: 1vw;// ボタンの位置を設定
+        right: 2vw;// ボタンの位置を設定
+        @include m.mq(sp) {
+            top: 2vw;// ボタンの位置を設定
+            right: 2vw;// ボタンの位置を設定
+            }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            background-color: v.$c-text;
+            width: v.$btn-tablet-width;
+            height: v.$btn-tablet-height;
+            left: calc( 50% - math.div( #{v.$btn-tablet-width}, 2 ) );
+            @include m.mq(sp) {
+                width: v.$btn-phone-width;
+                height: v.$btn-phone-height;
+                left: calc( 50% - math.div( #{v.$btn-phone-width}, 2 ) );
+                }
+        }
+        &::before {
+            transform: rotate( 45deg );
+        }
+        &::after {
+            transform: rotate( -45deg );
+        }
+        @include m.mq(md) {
+            display: block;
+        }
+    }
+}
