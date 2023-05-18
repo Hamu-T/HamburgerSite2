@@ -13,6 +13,9 @@
         align-items: center;
         overflow-y: hidden;
     }
+    &__input:focus::placeholder {
+        opacity: 0;
+    }
     &__grass {
         position: absolute;
         align-items: center;

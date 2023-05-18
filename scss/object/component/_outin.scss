@@ -7,9 +7,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    padding: 1.7vw;
     &--takeout {
         margin-right: 3vw;
-        padding: 1.7vw;
         background-image: url(../../../img/home_take-out_.jpg);
         @include m.mq(md) {
             margin-right: 1.5vw;
@@ -21,7 +21,6 @@
     }
     &--eatin {
         margin-left: 3vw;
-        padding: 1.7vw;
         background-image: url(../../../img/home-eat_in.jpg);
         @include m.mq(md) {
             margin-left: 1.5vw;
@@ -45,7 +44,7 @@
         background-color: v.$c-white;
         opacity: 80%;
         @include m.mq(sp) {
-            padding: 2vw;
+            padding: 3vw;
         }
     }
 }

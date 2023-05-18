@@ -9,10 +9,10 @@
     font-weight: bold;
 
     &--header {
-        font-size: 4.5vw;
-        margin-left: 65px;
+        font-size: 4vw;
+        margin-left: 4.5vw;
         @include m.mq(md) {
-            font-size: 6vw;
+            font-size: 5vw;
             margin-left: 0;
         }
         @include m.mq(sp) {
@@ -23,21 +23,22 @@
         display: flex;
         text-align: center;
         font-family: 'M PLUS 1', sans-serif;
-        font-size: 48px;
+        font-size: 3vw;
         margin-left: 4vw;
         color: v.$c-white;
         @include m.mq(md) {
-            font-size: 7vw;
+            font-size: 4.5vw;
             margin-left: 10vw;
         }
         @include m.mq(sp) {
-            margin-left: 10vw;
+            font-size: 10vw;
+            margin-left: 5vw;
         }
     }
     &--outin {
         &_title {
             font-size: 4vw;
-            padding-top: 1.8vw;
+            padding-top: 0.5vw;
             color: v.$c-outin;
             @include m.mq(md) {
                 font-size: 4.5vw;
@@ -65,7 +66,7 @@
         color: v.$c-white;
         font-size: 2vw;
         @include m.mq(md) {
-            font-size: 2.6vw;
+            font-size: 3.3vw;
         }
         @include m.mq(sp) {
             font-size: 7vw;

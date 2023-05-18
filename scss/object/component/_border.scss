@@ -10,10 +10,11 @@
         border-bottom: 4px solid;
         margin: 2.5vw 0 0 0;
         @include m.mq(md) {
-            width: 3.5vw;
+            width: 4vw;
+            border-bottom: 5px solid;
         }
         @include m.mq(sp) {
-            width: 9vw;
+            width: 10vw;
         }
     }
     &--map{
@@ -21,9 +22,10 @@
         width: 4.3vw;
         margin: 2vw 0 2.5vw 0;
         @include m.mq(md) {
-            width: 6.5vw;
+            width: 8.5vw;
         }
         @include m.mq(sp) {
+            border-bottom: 3px solid v.$c-white;
             width: 17vw;
             margin: 4vw 0;
         }

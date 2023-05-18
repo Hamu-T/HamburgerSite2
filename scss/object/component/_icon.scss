@@ -11,7 +11,9 @@
     height: 24px;
     left: 10px;
     @include m.mq(sp) {
-        background-size: 3.1vw;
-        left: 1.5vw;
+        width: 40px;
+        height: 40px;
+        background-size: 4.8vw;
+        left: 2.5vw;
     }
 }

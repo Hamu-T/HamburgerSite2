@@ -57,12 +57,12 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
     flex-direction: column;
     justify-content: space-around;
     margin-top: auto;
-    height: 20vw;
+    height: 23vw;
   }
 }
 @media screen and (max-width: 768px) {
   .l-header__inner {
-    height: 30vw;
+    height: 48vw;
   }
 }
 
@@ -111,12 +111,13 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 1200px) {
   .c-border--outin {
-    width: 3.5vw;
+    width: 4vw;
+    border-bottom: 5px solid;
   }
 }
 @media screen and (max-width: 768px) {
   .c-border--outin {
-    width: 9vw;
+    width: 10vw;
   }
 }
 .c-border--map {
@@ -126,11 +127,12 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 1200px) {
   .c-border--map {
-    width: 6.5vw;
+    width: 8.5vw;
   }
 }
 @media screen and (max-width: 768px) {
   .c-border--map {
+    border-bottom: 3px solid #FFF;
     width: 17vw;
     margin: 4vw 0;
   }
@@ -145,14 +147,21 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   border-radius: 10px;
 }
 .c-button--header {
-  margin: 0 10px;
+  font-weight: bold;
+  margin: 0 1.5vw 0 0.8vw;
   color: #707070;
+}
+@media screen and (max-width: 1200px) {
+  .c-button--header {
+    height: 5vw;
+  }
 }
 @media screen and (max-width: 768px) {
   .c-button--header {
     width: 18vw;
-    height: 6.2vw;
+    height: 10vw;
     font-size: 2.5vw;
+    margin-left: 3vw;
   }
 }
 
@@ -187,7 +196,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   height: 9vw;
   position: absolute;
   top: 1vw;
-  right: 1vw;
+  right: 2vw;
 }
 @media screen and (max-width: 768px) {
   .c-hamburger--sidebar {
@@ -201,7 +210,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   top: 50%;
   background-color: #707070;
   width: 7vw;
-  height: 0.6vw;
+  height: 1vw;
   left: calc(50% - 7vw/2);
 }
 @media screen and (max-width: 768px) {
@@ -234,8 +243,10 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 768px) {
   .c-grass {
-    background-size: 3.1vw;
-    left: 1.5vw;
+    width: 40px;
+    height: 40px;
+    background-size: 4.8vw;
+    left: 2.5vw;
   }
 }
 
@@ -255,35 +266,36 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 @media screen and (max-width: 1200px) {
   .c-input--header {
     width: 45vw;
+    height: 5vw;
   }
 }
 @media screen and (max-width: 768px) {
   .c-input--header {
     width: 53vw;
-    height: 6.2vw;
+    height: 10vw;
     font-size: 2.3vw;
-    padding-left: 7vw;
+    padding-left: 10vw;
   }
 }
 
 /* 基本 layout 設定 */
-.c-wrapper {
+.c-layout {
   position: relative;
   display: grid;
 }
-.c-wrapper .l-header {
+.c-layout .l-header {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.c-wrapper .l-main {
+.c-layout .l-main {
   grid-column: 1/2;
   grid-row: 2/3;
 }
-.c-wrapper .l-footer {
+.c-layout .l-footer {
   grid-column: 1/3;
   grid-row: 3/4;
 }
-.c-wrapper .l-sidebar {
+.c-layout .l-sidebar {
   grid-column: 2/3;
   grid-row: 1/3;
 }
@@ -293,10 +305,10 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  padding: 1.7vw;
 }
 .c-outin--takeout {
   margin-right: 3vw;
-  padding: 1.7vw;
   background-image: url(../../../img/home_take-out_.jpg);
 }
 @media screen and (max-width: 1200px) {
@@ -312,7 +324,6 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 .c-outin--eatin {
   margin-left: 3vw;
-  padding: 1.7vw;
   background-image: url(../../../img/home-eat_in.jpg);
 }
 @media screen and (max-width: 1200px) {
@@ -344,7 +355,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 768px) {
   .c-outin__inner {
-    padding: 2vw;
+    padding: 3vw;
   }
 }
 
@@ -373,6 +384,12 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   height: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  .c-sidemenu__container:first-child {
+    padding-top: 10vh;
+  }
+}
+
 /* text */
 .c-text {
   font-family: "M PLUS 1", sans-serif;
@@ -392,8 +409,8 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 768px) {
   .c-text--outin_content {
-    font-size: 3vw;
-    line-height: 5vw;
+    font-size: 4vw;
+    line-height: 7vw;
   }
 }
 .c-text--map {
@@ -410,8 +427,8 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 768px) {
   .c-text--map {
-    font-size: 2.7vw;
-    line-height: 6vw;
+    font-size: 3vw;
+    line-height: 8vw;
   }
 }
 .c-text--footer {
@@ -474,12 +491,12 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   font-weight: bold;
 }
 .c-title--header {
-  font-size: 4.5vw;
-  margin-left: 65px;
+  font-size: 4vw;
+  margin-left: 4.5vw;
 }
 @media screen and (max-width: 1200px) {
   .c-title--header {
-    font-size: 6vw;
+    font-size: 5vw;
     margin-left: 0;
   }
 }
@@ -492,24 +509,25 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   display: flex;
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
-  font-size: 48px;
+  font-size: 3vw;
   margin-left: 4vw;
   color: #FFF;
 }
 @media screen and (max-width: 1200px) {
   .c-title--visual {
-    font-size: 7vw;
+    font-size: 4.5vw;
     margin-left: 10vw;
   }
 }
 @media screen and (max-width: 768px) {
   .c-title--visual {
-    margin-left: 10vw;
+    font-size: 10vw;
+    margin-left: 5vw;
   }
 }
 .c-title--outin_title {
   font-size: 4vw;
-  padding-top: 1.8vw;
+  padding-top: 0.5vw;
   color: #EAEAEA;
 }
 @media screen and (max-width: 1200px) {
@@ -546,7 +564,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 1200px) {
   .c-title--map {
-    font-size: 2.6vw;
+    font-size: 3.3vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -607,7 +625,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 .p-map__section {
   position: relative;
   width: 50vw;
-  padding: 4vw;
+  padding: 6vw;
   z-index: 1;
 }
 @media screen and (max-width: 1200px) {
@@ -670,6 +688,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
     display: grid;
     gap: 3vw;
     flex-direction: column;
+    padding-bottom: 10vw;
   }
 }
 .p-outin__box {
@@ -710,6 +729,12 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   align-items: center;
   overflow-y: hidden;
 }
+.p-search__input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.p-search__input:focus::placeholder {
+  opacity: 0;
+}
 .p-search__grass {
   position: absolute;
   align-items: center;
@@ -728,14 +753,21 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 1200px) {
   .p-visual {
-    height: 50vw;
+    height: 40vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-visual {
+    height: 80vw;
   }
 }
 
+.u-search {
+  height: 10vw;
+}
 @media screen and (max-width: 768px) {
   .u-search {
     width: 80vw;
-    height: 7vw;
   }
 }
 
