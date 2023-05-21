@@ -1,0 +1,119 @@
+やる事
+
+- index.htmlからコピー
+
+------------------------------------------------------------------------------                                
+- visual
+    画像を変える
+        heightの調整(見た目からheaderと同じ高さ)
+            タブレットサイズ：
+                height:ダミーサイトの画像と同じ
+            スマホサイズ：
+                height:ダミーサイトの画像と同じ
+    titleを「Menu:」に変える<h2>
+        Roboto, bold, size:60px, line-heigh:70.31px, #FFF, left:86px
+            タブレットサイズ：
+                変わらず。
+            スマホサイズ：
+                size:36px, left:37px
+    title横「チーズバーガー」<p>
+        M+1m, bold, size:16px, line-height:23.76px, gap:19px, #FFF
+            タブレットサイズ：
+                変わらず。
+            スマホサイズ：
+                gap:12px
+
+------------------------------------------------------------------------------                                
+- main
+    titleを「見出しが入ります」<h3>
+        M+1m, bold, size:36px, line-height:53.46px, #3C2A10, left:100px
+            タブレットサイズ：
+                left:42px
+            スマホサイズ：
+                size:28px, 41.58, top:32px, left:22px
+    テキストを入れる<p>
+        M+1m, 400, size:16px, line-height:23.76px, #3C2A10, left: 100px, top:20px, margin-botton:70px
+            タブレットサイズ：
+                left:42px, margin-botton:37px
+            スマホサイズ：
+                size:28px, 41.58, top:25px
+    「チーズバーガー」「ダブルチーズバーガー」「スペシャルチーズバーガー」のcard作成
+            height:471px, width:1353px, bg:#3C2B1C
+                タブレットサイズ：
+                    height:354.5px, widht:756px
+                スマホサイズ：
+                    column, height:585.12px, widht:336.11px
+            左に画像
+                width:677px
+                flexを使って横並び
+                    タブレットサイズ：
+                        変わらず。
+                    スマホサイズ：
+                        height:230.53px
+                チーズバーガー
+                    h3:M+ 1m, bold, size:36px, top:56px, left:63px, line-height:53.46, #FFF
+                        タブレットサイズ：
+                            size:20px, top:31px, left:34.72px, 29.7px
+                        スマホサイズ：
+                            top:32.47px, left:17px
+                見出しが入ります
+                    h4:M+ 1m, bold, size:24px, top:44px, 35.64, #FFF
+                        タブレットサイズ：
+                            size:16px, 23.76, top:21px, botton:7px
+                        スマホサイズ：
+                            変わらず。
+                テキストが入ります
+                    p:M+ 1m, 400, size:16px, 23.76, #FFF
+                        タブレットサイズ：
+                            変わらず。
+                        スマホサイズ：
+                            bold
+                ボタン
+                    width:292px, height:76px, botton:60px, radias:50px, #FFF
+                        タブレットサイズ：
+                            widht:42.47px, height:163.16px, button:40.03px
+                        スマホサイズ：
+                            button:43.66px
+                    詳しく見る
+                        M+ 1m, bold, size:16px, #707070
+                            タブレットサイズ：
+                                変わらず。
+                            スマホサイズ：
+                                変わらず。
+
+------------------------------------------------------------------------------                                
+- ページネーション作成
+    「page 1/10」
+        Roboto, bold, widht:73px, height:33px, size:16px, 33px, #707070
+            タブレットサイズ：
+                変わらず。
+            スマホサイズ：
+                非表示
+    「<<」
+        border:1px, #707070
+            タブレットサイズ：
+                変わらず。
+    「1の正四角形(<a>タグ？)」
+        width:35px, height:35px, border:1px, border-color:#707070, back:#3C2B1C
+            タブレットサイズ：
+                変わらず。
+            (数字):Roboto, bold, size:16px, #FFF
+            タブレットサイズ：
+                変わらず。
+            スマホサイズ：
+                非表示
+    「2~9の正四角形(<a>タグ？)」
+        width:35px, height:35px, gap:15px, border:1px, border-color:#707070, back:#FFF
+            タブレットサイズ：
+                変わらず。
+            (数字):Roboto, bold, size:16px, #707070
+            タブレットサイズ：
+                変わらず。
+            スマホサイズ：
+                「前へ」に変更, M+1m, 400, 「次へ」に変更
+    「>>」
+        border:1px, #707070
+            タブレットサイズ：
+                変わらず。
+            スマホサイズ：
+                変わらず。
