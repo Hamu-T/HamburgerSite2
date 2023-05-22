@@ -6,16 +6,28 @@
 .p-visual {
     display: flex;
     align-items: center;
-    background-image: url(../../../img/mainvisual-sp.jpg);
     height: 23vw;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    @include m.mq(md) {
-        height: 40vw;
+    &--front {
+        background-image: url(../../../img/mainvisual-sp.jpg);
+        @include m.mq(md) {
+            height: 40vw;
+        }
+        @include m.mq(sp) {
+            height: 80vw;
+        }   
     }
-    @include m.mq(sp) {
-        height: 80vw;
+    &--archive {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../../img/page-title_arcive@2x.jpg);
+        height: 12vw;
+        @include m.mq(md) {
+            height: 40vw;
+        }
+        @include m.mq(sp) {
+            height: 80vw;
+        }
     }
 }
