@@ -1,0 +1,40 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.p-card {
+    &--list {
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+        min-height: 24vw;
+        background-color: v.$c-darkBrown;
+        @include m.mq (sp) {
+            flex-direction: column;
+        }
+    }
+    &--img {
+        width: 62%;
+        height: auto;
+        object-fit: cover;
+        @include m.mq(sp) {
+            width: 100%;
+        }
+    }
+    &--contents {
+        width: 50%;
+        margin: 4vw 3vw;
+        @include m.mq(sp) {
+            width: auto;
+            margin: 8vw 5vw 0 5vw;
+        }
+    }
+    &--button {
+        text-align: center;
+    }
+}
+// 「チーズバーガー」「ダブルチーズバーガー」「スペシャルチーズバーガー」のcard作成
+// height:471px, width:1353px, bg:#3C2B1C
+//     タブレットサイズ：
+//         height:354.5px, widht:756px
+//     スマホサイズ：
+//         column, height:585.12px, widht:336.11px

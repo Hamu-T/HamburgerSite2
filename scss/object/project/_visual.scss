@@ -1,8 +1,10 @@
 @use '../../foundation/variable' as v;
 @use '../../foundation/mixin' as m;
 
-/* header下のvisual */
+/* header下のvisual
+------------------ */
 
+/* front-page */
 .p-visual {
     display: flex;
     align-items: center;
@@ -12,7 +14,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     &--front {
-        background-image: url(../../../img/mainvisual-sp.jpg);
+        background-image: url(../../../images/mainvisual-sp.jpg);
         @include m.mq(md) {
             height: 40vw;
         }
@@ -20,14 +22,23 @@
             height: 80vw;
         }   
     }
+    /* archive-page */
     &--archive {
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../../img/page-title_arcive@2x.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../../images/page-title_arcive@2x.jpg);
         height: 12vw;
+        padding-left: 88px;
         @include m.mq(md) {
             height: 40vw;
         }
         @include m.mq(sp) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
             height: 80vw;
+            width: 100%;
+            padding-left: 50px;
+            background-position: unset;
         }
     }
 }
