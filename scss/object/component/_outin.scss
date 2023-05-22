@@ -10,7 +10,7 @@
     padding: 1.7vw;
     &--takeout {
         margin-right: 3vw;
-        background-image: url(../../../img/home_take-out_.jpg);
+        background-image: url(../../../images/home_take-out_.jpg);
         @include m.mq(md) {
             margin-right: 1.5vw;
         }
@@ -21,7 +21,7 @@
     }
     &--eatin {
         margin-left: 3vw;
-        background-image: url(../../../img/home-eat_in.jpg);
+        background-image: url(../../../images/home-eat_in.jpg);
         @include m.mq(md) {
             margin-left: 1.5vw;
         }

@@ -31,6 +31,8 @@ Component
 /*
 Project
 ----------------------------- */
+@use "../scss/object/project/card";
+@use "../scss/object/project/contents";
 @use "../scss/object/project/map";
 @use "../scss/object/project/menu";
 @use "../scss/object/project/outinbox";

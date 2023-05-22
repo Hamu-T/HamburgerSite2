@@ -1,0 +1,14 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.p-contents {
+    display: grid;
+    gap: 2vw;
+    padding: 3vw 5vw 8vw 5vw;
+    @include m.mq(md) {
+        padding-top: 5vw;
+    }
+    @include m.mq(sp) {
+        gap: 4vw;
+    }
+}
