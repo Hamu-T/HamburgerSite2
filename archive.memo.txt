@@ -11,12 +11,12 @@
             スマホサイズ：
                 height:ダミーサイトの画像と同じ
     titleを「Menu:」に変える<h2>
-        Roboto, bold, size:60px, line-heigh:70.31px, #FFF, left:86px
+        Roboto, bold, size:60px, #FFF, left:86px
             タブレットサイズ：
                 変わらず。
             スマホサイズ：
                 size:36px, left:37px
-    title横「チーズバーガー」<p>
+    title横「チーズバーガー」<h3>
         M+1m, bold, size:16px, line-height:23.76px, gap:19px, #FFF
             タブレットサイズ：
                 変わらず。

@@ -483,6 +483,11 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
     margin-left: 5vw;
   }
 }
+.c-text--archive {
+  font-size: 24px;
+  margin-left: 32px;
+  color: #FFF;
+}
 
 /* title */
 .c-title {
@@ -505,7 +510,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
     font-size: 10vw;
   }
 }
-.c-title--visual {
+.c-title--front {
   display: flex;
   text-align: center;
   font-family: "M PLUS 1", sans-serif;
@@ -514,13 +519,13 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   color: #FFF;
 }
 @media screen and (max-width: 1200px) {
-  .c-title--visual {
+  .c-title--front {
     font-size: 4.5vw;
     margin-left: 10vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .c-title--visual {
+  .c-title--front {
     font-size: 10vw;
     margin-left: 5vw;
   }
@@ -601,6 +606,11 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
     margin-top: 14vw;
     margin-bottom: 7vw;
   }
+}
+.c-title--archive {
+  font-size: 80px;
+  color: #FFF;
+  margin-left: 88px;
 }
 
 /* google map layout */
@@ -744,20 +754,36 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 .p-visual {
   display: flex;
   align-items: center;
-  background-image: url(../../../img/mainvisual-sp.jpg);
   height: 23vw;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
+.p-visual--front {
+  background-image: url(../../../img/mainvisual-sp.jpg);
+}
 @media screen and (max-width: 1200px) {
-  .p-visual {
+  .p-visual--front {
     height: 40vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .p-visual {
+  .p-visual--front {
+    height: 80vw;
+  }
+}
+.p-visual--archive {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../img/page-title_arcive@2x.jpg);
+  height: 12vw;
+}
+@media screen and (max-width: 1200px) {
+  .p-visual--archive {
+    height: 40vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-visual--archive {
     height: 80vw;
   }
 }
