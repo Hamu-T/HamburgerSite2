@@ -22,6 +22,7 @@ Component
 @use "../scss/object/component/input";
 @use "../scss/object/component/layout";
 @use "../scss/object/component/outin";
+@use "../scss/object/component/pages";
 @use "../scss/object/component/scroll";
 @use "../scss/object/component/shadow";
 @use "../scss/object/component/sidemenu";
@@ -36,6 +37,7 @@ Project
 @use "../scss/object/project/map";
 @use "../scss/object/project/menu";
 @use "../scss/object/project/outinbox";
+@use "../scss/object/project/pagenation";
 @use "../scss/object/project/search";
 @use "../scss/object/project/visual";
 
