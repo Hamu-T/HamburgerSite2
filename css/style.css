@@ -383,6 +383,93 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 
+.c-page {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2vw;
+  height: 2.2vw;
+  font-size: 1.3vw;
+  margin: 0 0.5vw;
+  color: #707070;
+}
+@media screen and (max-width: 1200px) {
+  .c-page {
+    width: 4vw;
+    height: 4vw;
+    font-size: 2vw;
+    margin: 0 1vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .c-page {
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 400;
+    font-size: 3.5vw;
+    height: 5vw;
+  }
+}
+.c-page--text {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .c-page--text {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .c-page--first {
+    justify-content: right;
+  }
+}
+.c-page--previous {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .c-page--previous {
+    display: flex;
+    width: auto;
+  }
+}
+.c-page--number {
+  border: 1px solid #707070;
+}
+.c-page--number:hover {
+  background-color: #3C2B1C;
+  color: #FFF;
+}
+@media screen and (max-width: 768px) {
+  .c-page--number {
+    visibility: hidden;
+  }
+}
+.c-page--next {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .c-page--next {
+    display: flex;
+    width: auto;
+  }
+}
+.c-page--last {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .c-page--last {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .c-page--last {
+    justify-content: left;
+  }
+}
+
 /* JS class sidebar以外scrollさせない */
 .c-no_scroll {
   position: -webkit-sticky;
@@ -526,7 +613,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 1200px) {
   .c-text--info {
-    font-size: 2.2vw;
+    font-size: 2vw;
     line-height: 3.5vw;
     margin: 4vw 0 0 0;
   }
@@ -686,7 +773,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 @media screen and (max-width: 1200px) {
   .c-title--info {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -893,6 +980,12 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   grid-row: 3/4;
 }
 
+.p-pagenation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vw;
+}
+
 /* input タグの設定 */
 .p-search {
   display: flex;
@@ -916,7 +1009,9 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   align-items: center;
 }
 
-/* header下のvisual */
+/* header下のvisual
+------------------ */
+/* front-page */
 .p-visual {
   display: flex;
   align-items: center;
@@ -925,6 +1020,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  /* archive-page */
 }
 .p-visual--front {
   background-image: url(../../../images/mainvisual-sp.jpg);
