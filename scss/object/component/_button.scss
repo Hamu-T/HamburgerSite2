@@ -36,12 +36,13 @@
         color: v.$c-text;
         @include m.mq(md) {
             font-size: 1.8vw;
+            margin: 5vw 0 1vw 0;
         }
         @include m.mq(sp) {
             font-size: 4vw;
             width: 44vw;
             height: 12vw;
-            margin: 6vw 0;
+            margin: 10vw 0 12vw 0;
         }
     }
 }

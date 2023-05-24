@@ -4,5 +4,8 @@
 .p-pagenation {
     display: flex;
     justify-content: center;
-    margin-bottom: 3vw;
+    margin-bottom: 4vw;
+    @include m.mq(sp) {
+    margin-bottom: 7.5vw;
+    }
 }

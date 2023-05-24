@@ -4,11 +4,13 @@
 .p-contents {
     display: grid;
     gap: 2vw;
-    padding: 3vw 5vw 8vw 5vw;
+    padding: 3vw 5vw 9vw 5vw;
     @include m.mq(md) {
         padding-top: 5vw;
+        padding-bottom: 13vw;
     }
     @include m.mq(sp) {
         gap: 4vw;
+        padding-bottom: 16vw;
     }
 }

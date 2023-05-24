@@ -23,6 +23,7 @@
         font-weight: 400;
         font-size: 3.5vw;
         height: 5vw;
+        width: 5vw;
     }
     &--text {
         width: auto;
@@ -49,6 +50,9 @@
         &:hover {
             background-color: v.$c-darkBrown;
             color: v.$c-white;
+        }
+        &:active {
+            background-color: v.$c-text;
         }
         @include m.mq(sp) {
             visibility: hidden;
