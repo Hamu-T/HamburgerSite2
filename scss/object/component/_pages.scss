@@ -12,6 +12,7 @@
     font-size: 1.3vw;
     margin: 0 0.5vw;
     color: v.$c-text;
+    cursor: pointer;
     @include m.mq(md) {
         width: 4vw;
         height: 4vw;
@@ -51,8 +52,11 @@
             background-color: v.$c-darkBrown;
             color: v.$c-white;
         }
-        &:active {
-            background-color: v.$c-text;
+        // &:active {
+        //     background-color: v.$c-text;
+        // }
+        &.onColor {
+            background-color: v.$c-darkBrown;
         }
         @include m.mq(sp) {
             visibility: hidden;
