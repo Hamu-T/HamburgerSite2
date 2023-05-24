@@ -395,6 +395,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   font-size: 1.3vw;
   margin: 0 0.5vw;
   color: #707070;
+  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .c-page {
@@ -444,8 +445,8 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   background-color: #3C2B1C;
   color: #FFF;
 }
-.c-page--number:active {
-  background-color: #707070;
+.c-page--number.onColor {
+  background-color: #3C2B1C;
 }
 @media screen and (max-width: 768px) {
   .c-page--number {
