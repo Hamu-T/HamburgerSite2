@@ -47,4 +47,10 @@
             height: 64vw;
         }
     }
+    &--shop {
+        background-image: url(../../../images/shop.png);
+        @include m.mq(md) {
+            height: 64vw;
+        }
+    }
 }
