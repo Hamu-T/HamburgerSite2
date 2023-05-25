@@ -45,4 +45,24 @@
             margin: 10vw 0 12vw 0;
         }
     }
+    &--single {
+        font-family: 'M PLUS 1', sans-serif;
+        font-weight: bold;
+        width: 25vw;
+        height: 6vw;
+        font-size: 0.8vw; 
+        border-radius: 24px;
+        @include m.mq(md) {
+            width: 51vw;
+            height: 13vw;
+            font-size: 1.8vw;
+            margin: 1vw 0;
+        }
+        @include m.mq(sp) {
+            width: 88vw;
+            height: 18vw;
+            font-size: 3.8vw;
+            margin-top: 6vw;
+        }
+    }
 }

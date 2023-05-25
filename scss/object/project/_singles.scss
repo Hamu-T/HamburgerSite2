@@ -1,0 +1,25 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.p-singles {
+    padding: 4vw 5vw 8vw 5vw;
+    display: grid;
+    gap: 3.5vw;
+    @include m.mq(md) {
+        padding: 7vw 6vw 10vw 6vw;
+        gap: 6vw;
+    }
+    @include m.mq(sp) {
+        gap: 8vw;
+    }
+}
+.p-single__container {
+    display: grid;
+    gap: 3vw;
+    @include m.mq(md) {
+        gap: 6vw;
+    }
+    @include m.mq(sp) {
+        gap: 7vw;
+    }
+}

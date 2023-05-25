@@ -115,4 +115,15 @@
             line-height: 6vw
         }
     }
+    &--single {
+        font-size: 0.8vw;
+        padding-bottom: 6vw;
+        @include m.mq(md) {
+            font-size: 1.7vw;
+            padding-bottom: 7vw;
+        }
+        @include m.mq(sp) {
+            font-size: 3.7vw;
+        }
+    }
 }

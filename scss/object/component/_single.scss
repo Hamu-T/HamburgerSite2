@@ -1,0 +1,144 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.c-single--gap {
+    display: grid;
+    gap: 3.5vw;
+    @include m.mq(md) {
+        gap: 12vw;
+    }
+    @include m.mq(sp) {
+
+    }
+}
+.c-single-txt {
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    color: v.$c-darkGoldenBrown;
+    &--h2 {
+        font-size: 2vw;
+        @include m.mq(md) {
+            font-size: 3.5vw;
+        }
+        @include m.mq(sp) {
+            font-size: 6.5vw;
+        }
+    }
+    &--text {
+        font-weight: 400;
+        font-size: 0.8vw;
+        line-height: 1.5vw;
+        @include m.mq(md) {
+            font-size: 1.6vw;
+            line-height: 2.6vw;
+        }
+        @include m.mq(sp) {
+            font-size: 3.8vw;
+            line-height: 6.6vw;
+        }
+    }
+    &--h3 {
+        font-size: 1.6vw;
+        @include m.mq(md) {
+            font-size: 2.8vw;
+        }
+        @include m.mq(sp) {
+            font-size: 5vw;
+        }
+    }
+    &--h4,&--h5, &--h6 {
+        font-size: 1.2vw;
+        @include m.mq(md) {
+            font-size: 2vw;
+        }
+        @include m.mq(sp) {
+            font-size: 4vw;
+        }
+    }
+    &--source {
+        font-weight: 400;
+        margin-top: 3.5vw;
+        font-size: 1vw;
+        height: 1.5vw;
+        @include m.mq(md) {
+            margin-top: 5vw;
+            font-size: 1.6vw;
+            height: 3.5vw;
+        }
+        @include m.mq(sp) {
+            font-size: 3.8vw;
+            height: 5.5vw;
+        }
+        span {
+            color: v.$c-border;
+            border-bottom: 1px solid v.$c-border;
+        }
+    }
+}
+.c-single__img {
+    &--top {
+        width: 100%;
+        height: 26vw;
+        background-image: url(../../../images/cooked-foods-750073-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        @include m.mq(md) {
+            height: 34vw;
+        }
+    }
+    &--contents {
+        display: flex;
+        gap: 2vw;
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+            @include m.mq(sp) {
+                flex-direction: row;
+            }
+        }
+    }
+    &--foods {
+        min-width: 30vw;
+        max-height: 20vw;
+        border: 1px solid #000;
+        @include m.mq(md) {
+            min-width: 38vw;
+            max-height: 25vw;
+        }
+    }
+    &--bottom {
+        display: flex;
+        justify-content: center;
+        @include m.mq(md) {
+            padding-bottom: 24vw;
+        }
+        @include m.mq(sp) {
+            padding-bottom: 0;
+        }
+    }
+    &--pin {
+        min-width: 30vw;
+        max-height: 20vw;
+        border: 1px solid #000;
+        @include m.mq(md) {
+            min-width: 72vw;
+            min-height: 42vw;
+        }
+    }
+}
+.c-single--content {
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 1.5vw;
+    color: v.$c-darkGoldenBrown;
+    @include m.mq(md) {
+        font-size: 1.7vw;
+        line-height: 2.5vw;
+    }
+    @include m.mq(sp) {
+        font-size: 4.2vw;
+        line-height: 6.5vw;
+    }
+}

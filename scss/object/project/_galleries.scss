@@ -1,0 +1,16 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.p-galleries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    @include m.mq(md) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+    }
+    @include m.mq(sp) {
+        grid-template-columns: auto;
+        gap: 6vw;
+    }
+}

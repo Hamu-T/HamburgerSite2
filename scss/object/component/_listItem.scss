@@ -1,0 +1,7 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.c-list--item {
+    list-style: inside;
+    list-style-type: auto;
+}

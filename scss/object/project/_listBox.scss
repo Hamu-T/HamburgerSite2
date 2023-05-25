@@ -1,0 +1,23 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.p-list-box {
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 400;
+    display: grid;
+    gap: 3.5vw;
+    font-size: 0.8vw;
+    margin-left: 1vw;
+    line-height: 1.2vw;
+    color: v.$c-darkGoldenBrown;
+    @include m.mq(md) {
+        gap: 6.5vw;
+        font-size: 1.6vw;
+        line-height: 2.4vw;
+    }
+    @include m.mq(sp) {
+        gap: 13.5vw;
+        font-size: 4vw;
+        line-height: 6.4vw;
+    }
+}
