@@ -1489,6 +1489,14 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
     height: 64vw;
   }
 }
+.p-visual--shop {
+  background-image: url(../../../images/shop.png);
+}
+@media screen and (max-width: 1200px) {
+  .p-visual--shop {
+    height: 64vw;
+  }
+}
 
 .u-gap {
   display: grid;
