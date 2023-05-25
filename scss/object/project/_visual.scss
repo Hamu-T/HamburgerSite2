@@ -41,4 +41,10 @@
             background-position: unset;
         }
     }
+    &--single {
+        background-image: url(../../../images/single-visual.png);
+        @include m.mq(md) {
+            height: 64vw;
+        }
+    }
 }

@@ -1,0 +1,13 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.u-gap {
+    display: grid;
+    gap: 1vw;
+    @include m.mq(md) {
+        gap: 2vw;
+    }
+    @include m.mq(sp) {
+        gap: 4vw;
+    }
+}

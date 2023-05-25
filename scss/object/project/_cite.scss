@@ -1,0 +1,10 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.p-cite {
+    padding: 3vw;
+    background-color: v.$c-lightGlay;
+    @include m.mq(md) {
+        padding: 6vw;
+    }
+}

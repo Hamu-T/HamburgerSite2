@@ -1,0 +1,13 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.c-gallery {
+    &--top {
+        display: flex;
+        justify-content: center;
+    }
+    &--item {
+        width: 100%;
+        height: auto;
+    }
+}

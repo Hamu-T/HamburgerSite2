@@ -1,0 +1,14 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.u-revert {
+    padding: revert;
+    @include m.mq(sp) {
+        padding: 0;
+    }
+}
+.u-revert2 {
+    @include m.mq(sp) {
+        padding: revert;
+    }
+}

@@ -17,15 +17,18 @@ Component
 ----------------------------- */
 @use "../scss/object/component/border";
 @use "../scss/object/component/button";
+@use "../scss/object/component/gallery";
 @use "../scss/object/component/hamburger";
 @use "../scss/object/component/icon";
 @use "../scss/object/component/input";
 @use "../scss/object/component/layout";
+@use "../scss/object/component/listItem";
 @use "../scss/object/component/outin";
 @use "../scss/object/component/pages";
 @use "../scss/object/component/scroll";
 @use "../scss/object/component/shadow";
 @use "../scss/object/component/sidemenu";
+@use "../scss/object/component/single";
 @use "../scss/object/component/text";
 @use "../scss/object/component/title";
 
@@ -33,15 +36,24 @@ Component
 Project
 ----------------------------- */
 @use "../scss/object/project/card";
+@use "../scss/object/project/cite";
+@use "../scss/object/project/code";
 @use "../scss/object/project/contents";
+@use "../scss/object/project/galleries";
+@use "../scss/object/project/listBox";
 @use "../scss/object/project/map";
 @use "../scss/object/project/menu";
 @use "../scss/object/project/outinbox";
 @use "../scss/object/project/pagenation";
 @use "../scss/object/project/search";
+@use "../scss/object/project/singles";
+@use "../scss/object/project/table";
+@use "../scss/object/project/titles";
 @use "../scss/object/project/visual";
 
 /*
 Utility
 ----------------------------- */
+@use "../scss/object/utility/gap";
+@use "../scss/object/utility/revert";
 @use "../scss/object/utility/u-search";

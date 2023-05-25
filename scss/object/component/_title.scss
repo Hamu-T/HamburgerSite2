@@ -136,4 +136,19 @@
             margin-top: 6vw;
         }
     }
+    &--single {
+        text-align: center;
+        font-family: 'M PLUS 1', sans-serif;
+        font-size: 3vw;
+        margin-left: 4vw;
+        color: v.$c-white;
+        @include m.mq(md) {
+            font-size: 7vw;
+            margin-left: 8vw;
+        }
+        @include m.mq(sp) {
+            font-size: 9vw;
+            margin-left: 8vw;
+        }
+    }
 }
